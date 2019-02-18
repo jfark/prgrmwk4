@@ -18,7 +18,9 @@ var mySpeeches = [
 
 var speechMath = [mySpeeches[1].date - mySpeeches[0].date];
 
-console.log("Ghandi's speech and Churchill's speech are " + speechMath + " years apart.");
+function myFunction() {
+	console.log ("Ghandi's speech and Churchill's speech are " + speechMath + " years apart.");
+};
 
 document.getElementById('BtnDonate').addEventListener('click', function(){
   //Code in here executes when the user clicks the "Donate" button.
