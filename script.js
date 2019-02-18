@@ -1,22 +1,24 @@
 var mySpeeches = [
 	{
 		"author" : "Winston Churchill",
-		"date" : "June 18, 1940",
+		"date" : 1940,
 		"b.c.e." : false
 	};
 	{
 		"author" : "Ghandi",
-		"date" : "August 8, 1942",
+		"date" : 1942,
 		"b.c.e." : false
 	}; 
 	{
 		"author" : "Demosthenes",
-		"date" : "342 B.C.E.",
+		"date" : 342,
 		"b.c.e." : true
 	};
 ]
 
-var speechMath = (mySpeeches[1] - mySpeeches[0]);
+var speechMath = (mySpeeches[1].year - mySpeeches[0].year);
+
+console.log onload("Ghandi's speech and Churchill's speech are" + speechMath + " years apart.")
 
 document.getElementById('BtnDonate').addEventListener('click', function(){
   //Code in here executes when the user clicks the "Donate" button.
