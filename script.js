@@ -1,22 +1,22 @@
-var churchillSpeech = {
-	"author" : "Winston Churchill",
-	"date" : "June 18, 1940",
-	"b.c.e." : false
-};
+var mySpeeches = [
+	{
+		"author" : "Winston Churchill",
+		"date" : "June 18, 1940",
+		"b.c.e." : false
+	};
+	{
+		"author" : "Ghandi",
+		"date" : "August 8, 1942",
+		"b.c.e." : false
+	}; 
+	{
+		"author" : "Demosthenes",
+		"date" : "342 B.C.E.",
+		"b.c.e." : true
+	};
+]
 
-var ghandiSpeech = {
-	"author" : "Ghandi",
-	"date" : "August 8, 1942",
-	"b.c.e." : false
-}; 
-
-var  demosthenesSpeech = {
-	"author" : "Demosthenes",
-	"date" : "342 B.C.E.",
-	"b.c.e." : true
-};
-
-var mySpeeches = ["churchillSpeech", "ghandiSpeech", "demosthenessSpeech"];
+var speechMath = (mySpeeches[1] - mySpeeches[0]);
 
 document.getElementById('BtnDonate').addEventListener('click', function(){
   //Code in here executes when the user clicks the "Donate" button.
