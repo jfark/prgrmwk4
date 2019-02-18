@@ -23,10 +23,12 @@ function myFunction() {
 };
 
 document.getElementById('BtnDonate').addEventListener('click', function(){
+	console.log ("There are " + mySpeeches.length + " speeches on the page.");
   //Code in here executes when the user clicks the "Donate" button.
 });
 
 document.getElementById('BtnChurchill').addEventListener('click', function(){
+	console.log ("")
   //Code in here executes when the user clicks the "Churchill" button.
 });
 
