@@ -2,23 +2,23 @@ var mySpeeches = [
 	{
 		"author" : "Winston Churchill",
 		"date" : 1940,
-		"b.c.e." : false
+		"bce" : false
 	},
 	{
 		"author" : "Ghandi",
 		"date" : 1942,
-		"b.c.e." : false
+		"bce" : false
 	}, 
 	{
 		"author" : "Demosthenes",
 		"date" : 342,
-		"b.c.e." : true
+		"bce" : true
 	}
 ];
 
 var speechMath = [mySpeeches[1].date - mySpeeches[0].date];
 
-function myFunction() {
+function onload() {
 	console.log ("Ghandi's speech and Churchill's speech are " + speechMath + " years apart.");
 };
 
@@ -28,14 +28,16 @@ document.getElementById('BtnDonate').addEventListener('click', function(){
 });
 
 document.getElementById('BtnChurchill').addEventListener('click', function(){
-	console.log ("")
+	console.log ("This speech was written by " + mySpeeches[0].author + " in " + mySpeeches[0].date + ". It is " + mySpeeches[0].bce + " that this year is B.C.E.");
   //Code in here executes when the user clicks the "Churchill" button.
 });
 
 document.getElementById('BtnGhandi').addEventListener('click', function(){
+	console.log ("This speech was written by " + mySpeeches[1].author + " in " + mySpeeches[1].date + ". It is " + mySpeeches[1].bce + " that this year is B.C.E.");
   //Code in here executes when the user clicks the "Ghandi" button.
 });
 
 document.getElementById('BtnDemosthenes').addEventListener('click', function(){
+	console.log ("This speech was written by " + mySpeeches[2].author + " in " + mySpeeches[2].date + ". It is " + mySpeeches[2].bce + " that this year is B.C.E.");
   //Code in here executes when the user clicks the "Demosthenes" button.
 });
