@@ -16,6 +16,8 @@ var  demosthenesSpeech = {
 	"b.c.e." : true
 };
 
+var mySpeeches = ["churchillSpeech", "ghandiSpeech", "demosthenessSpeech"];
+
 document.getElementById('BtnDonate').addEventListener('click', function(){
   //Code in here executes when the user clicks the "Donate" button.
 });
